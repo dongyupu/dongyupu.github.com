@@ -1,18 +1,23 @@
-# This is the default format. 
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title 
-auto: true
-pygments: true
-var:
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
+# Site settings
+title: Yupu's blog
+header-img: img/posts/04.jpg  #img/bg-index.jpg
+email: dongyupu@foxmail.com
+description: "Dream big, work smart, deliver fast!Software to plan, collaborate, code, and service. Built for teams."
+baseurl: ""
+url: "https://dongyupu.github.io/"
+twitter_username: 741375879
+github_username:  dongyupu
+facebook_username:  dong.yupu.7
+weibo_username: dongyupu1988
+zhihu_username: dongyupu
 
-production_url : http://username.github.com # or your custom domain name
-title : My Blog =)
+#add baidu analyze
+analytics:
+    provider: custom
 
-author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+# Build settings
+markdown: kramdown
+highlighter: rouge  #pygments
+permalink: pretty
+paginate: 20
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
