@@ -2,7 +2,7 @@
 layout: post
 title: "关于JIRA plugin的授权机制 "
 subtitle:   "关于JIRA plugin的授权机制 "
-date:       2019-04-23 2:20:00 +0800
+date:       2014-10-27 2:20:00 +0800
 author:     "Dongyupu"
 header-img: "img/post-bg-01.jpg"
 ---
