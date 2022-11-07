@@ -2,7 +2,7 @@
 layout: post
 title: "Jira集成飞书文档"
 subtitle:   "在问题详情页集成飞书文档"
-date:       2022-11-07 2:20:00 +0800
+date:       2022-11-06 2:20:00 +0800
 author:     "Dongyupu"
 header-img: "img/post-bg-01.jpg"
 ---
