@@ -7,6 +7,34 @@ author:     "Dongyupu"
 header-img: "img/post-bg-01.jpg"
 ---
 ## Jira Software plugins
+- `Adaptavist ScriptRunner for JIRA`
+- `Automation for Jira`
+- `Project Specific Select Field`
+- `JEditor`
+- `Jira Misc Workflow Extensions`
+- `JSU Automation Suite for Jira Workflows`
+- `JXL - Table Sheets Hierarchy Structure Sum-up Issue Editor`
+- `Mobile for JIRA`
+- `Status Time Reports`
+- `Subcomponents for Jira`
+- `vLinks`
+- `WorkflowWise - Parallel Approval and Workflow Extension`
+- `Clone Plus for Jira`
+- `Custom Charts for Jira`
+- `Dynamic Forms for Jira`
+- `eazyBI Reports and Charts for Jira`
+- `Exporter - Export Issues to Excel CSV PDF`
+- `Gears issue export permission for jira`
+- `Jira Workflow Toolbox`
+- `Smart Attachments`
+- `Smart Panels for Jira`
+- `STAGIL Navigation`
+- `Table Grid Next Generation`
+- `Tree CustomField (https://slie.ru/)`
+- `Warden`
+- `WebBooster`
+
+
 
 - `Jenkins Integration for Jira Server`
   - Jira Software addon to integrate Jenkins CI.
