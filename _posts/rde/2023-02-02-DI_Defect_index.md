@@ -7,7 +7,7 @@ author:     "Dongyupu"
 header-img: "img/post-bg-04.jpg"
 ---
 
-#什么是DI
+# 什么是DI
 Defect Index，DI值是衡量软件质量高低的指标之一，是软件质量状态的客观数据呈现
 ## DI值组成及统计范围
 - 1. 待解决DI值：SUBMITTED、 OPEN、  MORE INFO、IN PROGRESS、经办人确认中、POSTPONE、延期修复确认中、不修复确认中
