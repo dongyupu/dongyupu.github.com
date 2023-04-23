@@ -2,7 +2,7 @@
 layout: post
 title: "Groovy trigger Jenkins Job with token"
 subtitle:   "JWME post function"
-date:       2023-04-22 2:20:00 +0800
+date:       2023-04-21 2:20:00 +0800
 author:     "Dongyupu"
 header-img: "img/post-bg-01.jpg"
 ---
