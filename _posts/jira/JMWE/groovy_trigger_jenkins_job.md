@@ -6,6 +6,11 @@ date:       2023-04-22 2:20:00 +0800
 author:     "Dongyupu"
 header-img: "img/post-bg-01.jpg"
 ---
+### Jenkins : Error 403 No valid crumb was included in the request ...
+https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-masters/csrf-protection-explained
+- If you authenticate your API calls with a username and a user API token then a crumb is not required from Jenkins 2.96
+
+
 
 ~~~ groovy
 import com.google.common.collect.ImmutableMap
