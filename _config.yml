@@ -5,11 +5,11 @@ email: dongyupu@foxmail.com
 description: "Dream big, work smart, deliver fast!Software to plan, collaborate, code, and service. Built for teams."
 baseurl: ""
 url: "https://dongyupu.github.io/"
-twitter_username: 741375879
+#twitter_username: 741375879
 github_username:  dongyupu
-facebook_username:  dong.yupu.7
-weibo_username: dongyupu1988
-zhihu_username: dongyupu
+#facebook_username:  dong.yupu.7
+#weibo_username: dongyupu1988
+#zhihu_username: dongyupu
 
 #add baidu analyze
 analytics:
