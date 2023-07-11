@@ -61,23 +61,24 @@ if(!MyhttpCIBuilder){
   IM(msg)
 }
 MyhttpCIBuilder.setHeaders(["Authorization": "Basic $userPassBase64"])
-MyhttpCIBuilder.request(Method.POST, ContentType.JSON) {
+try{
+    MyhttpCIBuilder.request(Method.POST, ContentType.JSON) {
         def data = []
         body = new JsonBuilder(data).toString()
         response.success = { resp, JSON ->
             log.warn(JSON)
-          	msg = 'success'
-          	IM(msg)
+            msg = 'success'
+            IM(msg)
         }
         response.failure = { resp, JSON ->
             log.warn("Failed : " + JSON)
-          	msg = 'failure' + JSON
-          	IM(msg)
+            msg = 'failure'
+            IM(msg)
         }
+    }
 }
-
-
-
-
-
+catch(e){
+    msg = 'failure'
+    IM(msg)
+}
 ~~~
