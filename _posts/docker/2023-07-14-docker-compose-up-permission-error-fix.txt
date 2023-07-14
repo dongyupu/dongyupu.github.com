@@ -1,4 +1,4 @@
-xt---
+---
 layout: post
 title: "docker-compose-up-permission-error-fix"
 subtitle:   "docker-compose-up-permission-error-fix"
