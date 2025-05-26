@@ -33,6 +33,7 @@ header-img: "img/post-bg-01.jpg"
 - `Tree CustomField (https://slie.ru/)`
 - `Warden`
 - `WebBooster`
+- `Status Time Reports - Time in Status`
 
 
 
@@ -83,3 +84,7 @@ header-img: "img/post-bg-01.jpg"
 
 - `Structure.Pages Helper for Confluence`
   - A technical add-on that connects Structure.Pages Jira add-on to Confluence
+
+- `Status Time Reports - Time in Status`
+  - Generate reports based on time in status or time in assignee, group statuses to get various cycle time and lead time reports
+ 
