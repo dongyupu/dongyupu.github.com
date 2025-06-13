@@ -6,6 +6,31 @@ date:       2025-06-10 1:22:00 +0800
 author:     "Dongyupu"
 header-img: "img/post-bg-01.jpg"
 ---
+## Update 2025.6.13
+7.15.2 版本：仅删除报错的目录还是无法启动es进程，然后直接删除掉整个<bitbucket-home>/shared/search/data 才正常了。
+这里AI给出的解释：
+### 触发重建索引（Reindex）
+- 对于大多数情况，建议使用搜索索引重建功能来让 Bitbucket 重新生成索引数据。主要做法包括：
+
+- 删除（或重命名）现有索引数据 停止 Bitbucket Data Center，然后将 <BITBUCKET_HOME>/shared/search/data/bitbucket_search 目录备份后删除（或将其改名），强制 Bitbucket 在下次启动时重新生成完整的搜索索引。
+
+- 使用 REST API 触发重建 如果你不希望手动删除数据，也可以使用 Bitbucket 提供的 REST API 来重建索引。具体步骤如下：
+
+- 确保搜索服务器正在运行。
+
+- 发送一个 POST 请求（例如使用 curl）到重建索引的端点：
+
+~~~bash
+curl -X POST -u <adminUsername>:<adminPassword> http://<bitbucket_base_url>/rest/indexing/latest/rebuild
+~~~
+- 该操作会让 Bitbucket 重新构建搜索索引。
+
+- 重启 Bitbucket 删除索引数据后或触发重建操作后，重启 Bitbucket Data Center，系统会自动开始生成新的搜索索引。可通过监控 <BITBUCKET_HOME>/log/search/ 内的日志文件确认重建进度。
+
+
+
+
+
 
 # [Unable to establish a connection to Elasticsearch during index synchronisation](https://support.atlassian.com/bitbucket-data-center/kb/unable-to-establish-a-connection-to-elasticsearch-during-index-synchronisation/)
 
@@ -54,3 +79,6 @@ As the error indicates, index and alias names must be unique.
   - Remove the alias folder, <bitbucket-home>/shared/search/data/node/0/indices/Q0X8oUSNT9GiVCILGg6iXw in the above example
 
   - Restart Bitbucket Server
+
+
+
