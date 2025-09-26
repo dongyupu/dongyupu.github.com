@@ -17,7 +17,7 @@ dlopen failed: cannot locate symbol "srand" referenced by "libtxcore20151224_110
 com.cmri.wimodlna.client.core.UpnpManager.initUpnpServe
 ~~~
 
-上面意思很明显是无法找到srand这个东西，在度娘里Google之后发现很多人都遇到了这个问题，这是NDK10编译器的一个bug，srand应该是POSIX标准接口，理论上所有的Linux都应该支持的。
+上面意思很明显是无法找到srand这个东西，Google之后发现很多人都遇到了这个问题，这是NDK10编译器的一个bug，srand应该是POSIX标准接口，理论上所有的Linux都应该支持的。
 
 ## 解决方案：
 
